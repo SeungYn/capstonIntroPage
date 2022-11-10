@@ -103,8 +103,7 @@ button {
   width: 70%;
   height: 100%;
   justify-self: center;
-  align-self: stretch;
-
+  align-self: center;
   border: 5px solid var(--color-light-1-purple);
   border-radius: 36px;
   box-shadow: 10px 15px 6px -2px rgba(0, 0, 0, 0.66);
