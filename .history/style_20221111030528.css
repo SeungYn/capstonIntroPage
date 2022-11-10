@@ -543,7 +543,7 @@ intro part
 
 .realtimePosition-buble-realtimePosition {
   grid-area: c;
-  height: 80%;
+  height: 70%;
   background-color: var(--color-white);
 }
 .realtimePosition-buble-realtimePosition:after {

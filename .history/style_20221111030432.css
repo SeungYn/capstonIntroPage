@@ -310,7 +310,7 @@ intro part
   grid-area: b;
   position: relative;
   width: 100%;
-  height: 60%;
+  height: 50%;
   padding: 1px;
   background: var(--color-light-1-purple);
   -webkit-border-radius: 46px;
@@ -405,7 +405,7 @@ intro part
 
 .party-buble-party {
   grid-area: b;
-  height: 60%;
+  height: 50%;
 }
 .party-buble-content {
   color: var(--color-light-1-purple);
@@ -543,7 +543,7 @@ intro part
 
 .realtimePosition-buble-realtimePosition {
   grid-area: c;
-  height: 80%;
+  height: 70%;
   background-color: var(--color-white);
 }
 .realtimePosition-buble-realtimePosition:after {
