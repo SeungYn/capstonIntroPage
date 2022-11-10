@@ -575,37 +575,37 @@ intro part
 .up-fade-out {
   transform: translateY(-10rem);
   opacity: 0;
-  transition: all 0.6s ease-in;
+  transition: all 0.9s ease-in;
 }
 
 .up-fade-in {
   transform: translateY(0);
   opacity: 1;
-  transition: all 0.6s ease-in;
+  transition: all 0.9s ease-in;
 }
 
 .left-fade-out {
   transform: translateX(-20rem);
   opacity: 0;
-  transition: all 0.6s ease-in;
+  transition: all 0.9s ease-in;
 }
 
 .left-fade-in {
   transform: translateX(0);
   opacity: 1;
-  transition: all 0.6s ease-in;
+  transition: all 0.9s ease-in;
 }
 
 .right-fade-out {
   transform: translateX(20rem);
   opacity: 0;
-  transition: all 0.6s ease-in;
+  transition: all 0.9s ease-in;
 }
 
 .right-fade-in {
   transform: translateX(0);
   opacity: 1;
-  transition: all 0.6s ease-in;
+  transition: all 0.9s ease-in;
 }
 
 /* play */
@@ -621,13 +621,13 @@ intro part
 }
 
 .play-btn {
-  margin-top: 2rem;
+  margin-top: 1rem;
   font-size: var(--font-large);
   background-color: var(--color-light-purple);
   padding: 1.6rem 2rem;
   color: var(--color-white);
   border-radius: 2rem;
-  box-shadow: 10px 15px 6px -2px rgba(0, 0, 0, 0.66);
+  box-shadow: 10px 15px 6px 0px rgba(0, 0, 0, 0.66);
   -webkit-box-shadow: 10px 15px 6px -2px rgba(0, 0, 0, 0.66);
   -moz-box-shadow: 10px 15px 6px -2px rgba(0, 0, 0, 0.66);
 }
@@ -635,5 +635,4 @@ intro part
 .play-btn:hover,
 .play-btn:active {
   box-shadow: none;
-  transform: translate(10px, 15px);
 }

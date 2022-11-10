@@ -621,7 +621,7 @@ intro part
 }
 
 .play-btn {
-  margin-top: 2rem;
+  margin-top: 1rem;
   font-size: var(--font-large);
   background-color: var(--color-light-purple);
   padding: 1.6rem 2rem;
