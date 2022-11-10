@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=no"> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=3, user-scalable=yes">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+		<script src="main.js" defer></script>
+  </head>
+  <body>
+    <header class="header">혼밥 메이트</header>
+    <!-- intro part -->
+    <section id="intro" class="intro">
+      <article class="intro__left">
+        <h1 class="intro__left-title">혼밥 메이트에서</br> 밥 먹을 사람을 쉽게 구하세요!</h1>
+        <p class="intro__left-subTitle">혼밥 메이트는 PC, 모바일 어느 환경이든 지원합니다.</p>
+        <img src="img/qr.png" class="intro__left-QRcode" />
+      </article>
+
+      <article class="intro__right">
+        <img src="img/homeWhite.png" alt="" class="phone intro__right-phone1" />
+        <img
+          src="img/positionwhite.png"
+          alt=""
+          class="phone intro__right-phone2"
+        />
+        <img
+          src="img/partyWhite.png"
+          alt=""
+          class="phone intro__right-phone3"
+        />
+      </article>
+    </section>
+		<!-- discription -->
+    <section id="discription" class="discription up-fade-out">
+      <p class="discription__title"><span class="bold">혼밥 메이트</span> 소개</p>
+      <article class="discription__left">
+				<p class="discription__left-subTitle"><span class="bold">혼밥 메이트</span>란?</p>
+				<span class="discription__left-span">누구나 쉽게 밥을 같이 먹을 사람을
+					구하는 웹앱 서비스입니다.<br>
+					혼밥 메이트에는 3가지 주요 기능으로 파티, 실시간 위치, 지도가 있습니다. <br>
+					우선, <span class="bold">파티</span>는 게임에서의 파티와 똑같은 개념으로 누구나 쉽게 파티를 만들고 가입하여 사람을 쉽게 구할 수 있습니다.<br>
+					다음, <span class="bold">지도</span>는 식당들의 위치를 한 눈에 볼 수 있게 해놨으며 선택적으로 실시간 위치 공유를 하여 파티원의 위치를 지도에 볼 수 있습니다.<br>
+					마지막으로, <span class="bold">위치</span>는 선택적으로 내 위치와 파티원의 위치를 실시간으로 볼 수 있도록 했습니다.
+				</span>
+			</article>
+      <article class="discription__right1">
+				<p class="discription__left-subTitle"><span class="bold">동기 및 목적</span></p>
+				<span class="discription__left-span">
+					우리는 혼밥을 계속할 경우 그렇지 않은 경우보다 우울감을 느낄 가능성이 더 높기 때문에 혼밥 횟수를 줄일 필요가 있다고 생각했다. <br>사람들의 혼밥 횟수를 줄이기 위해서는 사람들이 혼밥을 하는 이유인 ‘같이 먹을 사람이 없어서’와 ‘내가 좋아하는 음식을 먹고 싶어서’라는 부분을 해결해야만 했다. <br>혼밥 메이트는 같은 학교 학생들을 대상으로 혼자 밥 먹기 싫어하는 사람들이 여럿 모여서 밥을 같이 먹는 플랫폼이다. 
+
+				</span>
+			</article>
+			
+    </section>
+		<!-- map -->
+		<section id="map" class="map">
+			<header class="map__header">"식당의 위치를 쉽게 볼 수 있는 지도"</header>
+			<img src="img/homeWhite.png" class="phoneImg map-homeImg" alt="메인 화면" />
+			<div class="map__leftBubble">
+				<p class="map__leftBubble-content">
+					kakaoMap API를 이용해 식당들의 위치를 지도에 표시해 클릭 시
+					해당 식당의 파티 리스트를 나타내 준다. <br>
+					사용자는 파티를 클릭하면 파티를 가입 할 수 있다.
+				</p>
+			</div>
+			<div class="rightBubble map--video-buble">
+				<p class="bubble-content map-content">
+					메인 페이지 영상
+				</p>
+			</div>
+			<video src="video/test.mp4" class="video map-video" type="video/quicktime" controls></video>
+		</section>
+		
+		<!-- party -->
+		<section id="party" class="party">
+			<header class="party__header">"더 이상은 혼자가 아닌 파티"</header> 
+			<img src="img/partyWhite.png" class="phoneImg party-partyImg " alt="파티 화면" />
+			<div class="leftBubble party-buble party-buble-party">
+				<p class="bubble-content party-buble-content">
+					파티를 통해 함께라는 시각적인 효과를 줍니다.<br>
+					홈 화면에서 파티 만들기를 통해 만들 수 있으며 파티원 모두가 준비를 해야 방장이 시작 할 수 있습니다.
+					
+				</p>
+			</div>
+			<div class="rightBubble party-buble party-buble-video">
+				<p class="bubble-content party-buble-content">
+					파티 영상
+				</p>
+			</div>
+			<video src="video/test.mp4" class="video party-partyVideo" type="video/quicktime" controls></video>
+			<!-- party-report -->
+			<header class="party__header2">"비속어/욕설 신고 및 강퇴"</header> 
+			<img src="img/partyWhite.png" class="phoneImg party-reportImg " alt="신고 화면" />
+			<div class="party-buble-report">
+				<div class="leftBubble party-buble">
+					<p class="bubble-content party-buble-content">
+						부적절한 언어 사용이나 욕설을 사용한 파티원은 <br>신고가 가능합니다.
+						파티원을 클릭 시 해당 파티원의 신고 내역을 볼 수 있습니다. 
+					</p>
+				</div>
+
+				<div class="leftBubble party-buble">
+					<p class="bubble-content party-buble-content">
+						파티가 시작 했을 때 파티원이 나가면 나간 파티원은 자동으로 탈주 신고처리 됩니다.
+					</p>
+				</div>
+
+				<div class="leftBubble party-buble">
+					<p class="bubble-content party-buble-content">
+						방장은 파티원을 강퇴 할 수 있습니다.
+					</p>
+				</div>
+			</div>
+			<div class="rightBubble party-buble party-buble-report-video">
+				<p class="bubble-content party-buble-content">
+					신고/강퇴 영상
+				</p>
+			</div>
+			<video src="video/test.mp4" class="video party-reportVideo" type="video/quicktime" controls></video>
+			
+			<!-- party-kick -->
+		</section>
+
+		<!-- chat -->
+		<section id="chat" class="chat">
+			<header class="chat__header">"실시간 소통하는 채팅"</header> 
+			<img src="img/partyWhite.png" class="phoneImg chat-chatImg " alt="채팅 화면" />
+			<div class="leftBubble chat-buble-chat">
+				<p class="bubble-content chat-buble-content">
+					실시간으로 파티원들과 의사소통이 가능합니다.
+				</p>
+			</div>
+			<div class="rightBubble chat-buble-chat-video">
+				<p class="bubble-content chat-buble-content">
+					신고/강퇴 영상
+				</p>
+			</div>
+			<video src="video/test.mp4" class="video chat-chatVideo" type="video/quicktime" controls></video>
+		</section>
+
+		<!-- realtime position -->
+		<section class="realtimePosition">
+			<header class="realtimePosition__header">"선택적인 위치 공유"</header> 
+			<img src="img/partyWhite.png" class="phoneImg realtimePosition-realtimeImg " alt="채팅 화면" />
+			<div class="leftBubble realtimePosition-buble-realtimePosition">
+				<p class="bubble-content realtimePosition-buble-content">
+					실시간 위치를 확인함으로써 파티원들끼리 채팅을 통해 정한 시간 
+					과 장소에 오는지 확인할 수 있음.
+				</p>
+			</div>
+			<div class="rightBubble realtimePosition-buble-video">
+				<p class="bubble-content realtimePosition-buble-content">
+					실시간 위치 영상
+				</p>
+			</div>
+			<video src="video/test.mp4" class="video realtimePosition-Video" type="video/quicktime" controls></video>
+		</section>
+  </body>
+</html>

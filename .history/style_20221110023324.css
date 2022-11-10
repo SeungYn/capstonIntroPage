@@ -1,0 +1,156 @@
+/* Global */
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+  --color-light-purple: #e3d0ff;
+  --color-pink: #fe918d;
+  --color-dark-pink: #ff6863;
+  --color-black: #4d4d4d;
+  --color-dark-grey: #4d4d4d;
+  --color-grey: #616161;
+  --color-light-grey: #7c7979;
+  --color-blue: #73aace;
+  --color-yellow: #fff7d1;
+  --color-orange: #feb546;
+  --color-black: #000000;
+
+  /* Font size */
+  --font-large: 2rem;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 1rem;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Size */
+  --size-border-radius: 4px;
+
+  /* Annimation */
+  --animation-duration: 300ms;
+}
+
+/* Universal tags */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+h1,
+p {
+  margin: 0;
+}
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.phone {
+  width: 10rem;
+  height: 20rem;
+}
+
+/* 
+intro part
+ */
+
+.intro {
+  background: rgb(213, 185, 255);
+  background: linear-gradient(
+    315deg,
+    rgba(213, 185, 255, 1) 0%,
+    rgba(135, 171, 254, 1) 100%
+  );
+
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: 7rem;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
+}
+
+.intro__left {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+}
+.intro__left-title {
+  font-size: var(--font-large);
+  color: var(--color-light-white);
+  margin-bottom: 1rem;
+}
+
+.intro__left-subTitle {
+  font-size: var(--font-micro);
+  color: var(--color-light-purple);
+  margin-bottom: 2rem;
+}
+.intro__left-QRcode {
+  width: 5rem;
+  background-color: transparent;
+}
+
+.intro__right {
+  transform: translateY(10%);
+  transform: translateX(-8%);
+  white-space: nowrap;
+}
+
+.intro__right-phone1 {
+  transform: translateY(23%);
+}
+
+.intro__right-phone2 {
+}
+
+.intro__right-phone3 {
+}
+
+/* description */
+
+.discription {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 10rem;
+  grid-template-areas:
+    'a a'
+    'b c';
+  padding: 0 20%;
+}
+
+.discription__title {
+  grid-area: a;
+  margin: auto;
+}
+
+.discription__left {
+  grid-area: b;
+}
+
+.discription__right {
+  grid-area: c;
+}
