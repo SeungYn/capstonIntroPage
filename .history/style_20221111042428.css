@@ -641,13 +641,6 @@ intro part
 }
 
 /* slider */
-.swiper-container {
+.swiper-button-next {
   color: black;
-
-  height: 40rem;
-}
-
-.test {
-  width: 20%;
-  height: 100%;
 }

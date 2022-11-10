@@ -122,25 +122,10 @@ solobobBtn.addEventListener('click', () => {
 });
 
 //슬라이더
-const swiper = new Swiper('.swiper-container', {
-  loop: true,
-  centeredSlides: true,
-  slidesPerView: '2',
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+const swiper = new Swiper('.swiper', {
   effect: 'coverflow',
   coverflowEffect: {
-    rotate: 5,
-    depth: 100,
+    rotate: 30,
     slideShadows: false,
-    // modifier:1,
-    // stretch: 50
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-    clickable: true,
   },
 });

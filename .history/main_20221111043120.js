@@ -125,7 +125,7 @@ solobobBtn.addEventListener('click', () => {
 const swiper = new Swiper('.swiper-container', {
   loop: true,
   centeredSlides: true,
-  slidesPerView: '2',
+  slidesPerView: '3',
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
