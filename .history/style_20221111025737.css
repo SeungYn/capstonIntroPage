@@ -441,12 +441,12 @@ intro part
 }
 
 .party-buble-report > .party-buble:first-child {
-  height: 42%;
+  height: 50%;
 }
 
 .party-buble-report > .party-buble:not(:first-child) {
   margin-top: 1.6rem;
-  height: 42%;
+  height: 25%;
 }
 
 .party-buble-report-video {

@@ -113,7 +113,7 @@ button {
   grid-area: b;
   position: relative;
   width: 100%;
-  height: 50%;
+  height: 70%;
   padding: 1px;
   background: var(--color-light-1-purple);
   -webkit-border-radius: 46px;
@@ -441,12 +441,12 @@ intro part
 }
 
 .party-buble-report > .party-buble:first-child {
-  height: 42%;
+  height: 30%;
 }
 
 .party-buble-report > .party-buble:not(:first-child) {
   margin-top: 1.6rem;
-  height: 42%;
+  height: 25%;
 }
 
 .party-buble-report-video {
