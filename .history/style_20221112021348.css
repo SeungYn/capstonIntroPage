@@ -213,7 +213,6 @@ intro part
   );
 
   display: flex;
-  flex: 0 0;
   justify-content: center;
   overflow: hidden;
   /* padding-top: 7rem; */

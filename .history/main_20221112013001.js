@@ -16,11 +16,11 @@ window.addEventListener(
 
 //확대 축소 막기
 function fixHeight() {
+  alert(getWindowWidth());
   const zoom = getWindowWidth() / 1920;
-  console.log(`windowWidth : ${getWindowWidth()}`);
-  console.log(`zoom : ${zoom}`);
+
   document.body.style.zoom = zoom;
-  //document.body.style.transform = `scale(${zoom})`;
+  console.log(zoom);
 }
 function getWindowWidth() {
   if (window.innerWidth) {

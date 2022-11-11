@@ -74,6 +74,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   height: 100%;
+  min-width: 1920px;
 }
 
 a {
@@ -213,7 +214,6 @@ intro part
   );
 
   display: flex;
-  flex: 0 0;
   justify-content: center;
   overflow: hidden;
   /* padding-top: 7rem; */
@@ -310,7 +310,6 @@ intro part
 
 /* map part */
 .map {
-  overflow-x: hidden;
   position: relative;
   background-color: var(--color-light2-purple);
   display: grid;
@@ -395,7 +394,6 @@ intro part
 
 /* party */
 .party {
-  overflow-x: hidden;
   background-color: var(--color-light-1-purple);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -502,7 +500,6 @@ intro part
 
 /* chat */
 .chat {
-  overflow-x: hidden;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background-color: var(--color-light2-purple);

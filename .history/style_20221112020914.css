@@ -29,13 +29,13 @@
   --font-regular: 1.8rem;
   --font-small: 16px;
   --font-micro: 1.4rem; */
-  --font-very-large: 76px;
+  /* --font-very-large: 76px;
   --font-large: 48px;
   --font-small-large: 40px;
   --font-medium: 35.2px;
   --font-regular: 28.8px;
   --font-small: 16px;
-  --font-micro: 22.4px;
+  --font-micro: 22.4px; */
   /* grid size */
   /* --gird-row-basic: 30rem;
   --gird-row-header: 10rem; */
@@ -213,7 +213,6 @@ intro part
   );
 
   display: flex;
-  flex: 0 0;
   justify-content: center;
   overflow: hidden;
   /* padding-top: 7rem; */

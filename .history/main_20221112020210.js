@@ -15,26 +15,36 @@ window.addEventListener(
 );
 
 //확대 축소 막기
-function fixHeight() {
-  const zoom = getWindowWidth() / 1920;
-  console.log(`windowWidth : ${getWindowWidth()}`);
-  console.log(`zoom : ${zoom}`);
-  document.body.style.zoom = zoom;
-  //document.body.style.transform = `scale(${zoom})`;
-}
-function getWindowWidth() {
-  if (window.innerWidth) {
-    return window.innerWidth;
-  } else {
-    const B = document.body,
-      D = window.documentElement;
-    return Math.min(D.clientWidth, B.clientWidth);
-  }
+// function fixHeight() {
+//   const zoom = getWindowWidth() / 1920;
+//   console.log(`windowWidth : ${getWindowWidth()}`);
+//   console.log(`zoom : ${zoom}`);
+//   // document.body.style.zoom = zoom;
+//   document.body.style.transform = `scale(${zoom})`;
+// }
+// function getWindowWidth() {
+//   if (window.innerWidth) {
+//     return window.innerWidth;
+//   } else {
+//     const B = document.body,
+//       D = window.documentElement;
+//     return Math.min(D.clientWidth, B.clientWidth);
+//   }
+// }
+// window.addEventListener('resize', () => {
+//   fixHeight();
+// });
+// fixHeight();
+function setTransformScale(scaleFactor) {
+  if (!scaleFactor) scaleFactor = 1;
+
+  let height = window.innerHeight * (1 / scaleFactor);
+  let width = window.innerWidth * (1 / scaleFactor);
 }
 window.addEventListener('resize', () => {
-  fixHeight();
+  setTransformScale(1920);
 });
-fixHeight();
+setTransformScale(1920);
 //IntersectionObserver
 const sectionIds = ['#map', '#party', '#chat'];
 const sections = sectionIds.map((i) => document.querySelector(i));

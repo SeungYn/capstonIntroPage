@@ -314,7 +314,7 @@ intro part
   position: relative;
   background-color: var(--color-light2-purple);
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 600px);
   grid-auto-rows: var(--gird-row-header) var(--gird-row-basic)
     var(--gird-row-basic) var(--gird-row-basic);
   grid-template-areas:

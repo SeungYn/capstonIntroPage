@@ -35,6 +35,7 @@ window.addEventListener('resize', () => {
   fixHeight();
 });
 fixHeight();
+
 //IntersectionObserver
 const sectionIds = ['#map', '#party', '#chat'];
 const sections = sectionIds.map((i) => document.querySelector(i));

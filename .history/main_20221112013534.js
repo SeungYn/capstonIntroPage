@@ -20,7 +20,6 @@ function fixHeight() {
   console.log(`windowWidth : ${getWindowWidth()}`);
   console.log(`zoom : ${zoom}`);
   document.body.style.zoom = zoom;
-  //document.body.style.transform = `scale(${zoom})`;
 }
 function getWindowWidth() {
   if (window.innerWidth) {
