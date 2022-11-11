@@ -57,9 +57,7 @@
 }
 
 /* Universal tags */
-html {
-  font-size: 16px;
-}
+
 * {
   box-sizing: border-box;
 }
@@ -232,12 +230,10 @@ intro part
 .intro__left-subTitle {
   font-size: var(--font-micro);
   color: var(--color-light-purple);
-  /* margin-bottom: 2rem; */
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 .intro__left-QRcode {
-  /* width: 5rem; */
-  width: 80px;
+  width: 5rem;
   background-color: transparent;
 }
 
@@ -262,8 +258,7 @@ intro part
 .discription {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* grid-auto-rows: 15rem 1fr; */
-  grid-auto-rows: 240px 1fr;
+  grid-auto-rows: 15rem 1fr;
   grid-template-areas:
     'a a'
     'b c';
@@ -285,13 +280,11 @@ intro part
 .discription__left {
   grid-area: b;
   padding: 0 0.3rem;
-  /* padding: 0 0.3rem; */
 }
 
 .discription__left-subTitle {
   font-size: var(--font-medium);
-  /* padding-bottom: 1rem; */
-  padding-bottom: 16px;
+  padding-bottom: 1rem;
 }
 
 .discription__left-span {
@@ -366,8 +359,7 @@ intro part
 
 .map__leftBubble-content {
   font-size: var(--font-medium);
-  /* padding: 0 2rem; */
-  padding: 0 32px;
+  padding: 0 2rem;
   color: var(--color-light-white);
 }
 
@@ -475,8 +467,7 @@ intro part
 }
 
 .party-buble-report > .party-buble:not(:first-child) {
-  /* margin-top: 1.6rem; */
-  margin-top: 25.6px;
+  margin-top: 1.6rem;
   height: 42%;
 }
 
@@ -602,8 +593,7 @@ intro part
 
 /* observe */
 .up-fade-out {
-  /* transform: translateY(-10rem); */
-  transform: translateY(-160px);
+  transform: translateY(-10rem);
   opacity: 0;
   transition: all 0.6s ease-in;
 }
@@ -615,8 +605,7 @@ intro part
 }
 
 .left-fade-out {
-  /* transform: translateX(-20rem); */
-  transform: translateX(-320px);
+  transform: translateX(-20rem);
   opacity: 0;
   transition: all 0.6s ease-in;
 }
@@ -628,8 +617,7 @@ intro part
 }
 
 .right-fade-out {
-  /* transform: translateX(20rem); */
-  transform: translateX(320px);
+  transform: translateX(20rem);
   opacity: 0;
   transition: all 0.6s ease-in;
 }
@@ -643,8 +631,7 @@ intro part
 /* play */
 .play {
   text-align: center;
-  /* padding: 10rem; */
-  padding: 160px;
+  padding: 10rem;
   background-color: var(--color-light2-purple);
 }
 
@@ -654,15 +641,12 @@ intro part
 }
 
 .play-btn {
-  /* margin-top: 2rem; */
-  margin-top: 32px;
+  margin-top: 2rem;
   font-size: var(--font-large);
   background-color: var(--color-light-purple);
-  /* padding: 1.6rem 2rem; */
-  padding: 25.6px 32px;
+  padding: 1.6rem 2rem;
   color: var(--color-white);
-  /* border-radius: 2rem; */
-  border-radius: 32px;
+  border-radius: 2rem;
   box-shadow: 10px 15px 6px -2px rgba(0, 0, 0, 0.66);
   -webkit-box-shadow: 10px 15px 6px -2px rgba(0, 0, 0, 0.66);
   -moz-box-shadow: 10px 15px 6px -2px rgba(0, 0, 0, 0.66);
