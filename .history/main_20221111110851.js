@@ -1,7 +1,3 @@
-alert(
-  '네이버앱, Edge로 접속하시면 동영상이 안 나옵니다. 크롬이나 사파리 카카오앱으로 접속해주시길 바랍니다.'
-);
-
 window.addEventListener(
   'wheel',
   (event) => {
@@ -148,3 +144,6 @@ solobobBtn.addEventListener('click', () => {
 //     clickable: true,
 //   },
 // });
+
+const agt = navigator.userAgenttoLowercase();
+console.log(agt);
