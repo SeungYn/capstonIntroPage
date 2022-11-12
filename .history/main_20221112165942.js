@@ -1,7 +1,6 @@
-alert(
-  '네이버앱, Edge로 접속하시면 동영상이 안 나옵니다. 일부 아이폰은 UI가 제대로 반영되지 않을 수 있습니다. 크롬, 사파리로 접속하시길 바랍니다. 아이폰은 확대하면 UI가 변경됩니다. '
-);
-//로드시 초기세팅
+// alert(
+//   '네이버앱, Edge로 접속하시면 동영상이 안 나옵니다. 일부 아이폰은 UI가 제대로 반영되지 않을 수 있습니다. 크롬, 사파리로 접속하시길 바랍니다.'
+// );
 
 window.addEventListener(
   'wheel',
@@ -17,9 +16,8 @@ window.addEventListener(
 //확대 축소 막기
 function fixHeight() {
   const zoom = getWindowWidth() / 1920;
-
-  // alert(`windowWidth : ${getWindowWidth()}`);
-  // alert(`zoom : ${zoom}`);
+  console.log(`windowWidth : ${getWindowWidth()}`);
+  console.log(`zoom : ${zoom}`);
   document.body.style.zoom = zoom;
   //document.body.style.transform = `scale(${zoom})`;
 }
@@ -36,6 +34,7 @@ window.addEventListener('resize', () => {
   fixHeight();
 });
 fixHeight();
+
 //IntersectionObserver
 const sectionIds = ['#map', '#party', '#chat'];
 const sections = sectionIds.map((i) => document.querySelector(i));
@@ -93,7 +92,6 @@ const observerCallback2 = (entries) => {
 //그냥 보이면 모든지 나타나는 버전
 const observerCallback = (entries) => {
   entries.forEach((e) => {
-    console.log(e);
     if (e.isIntersecting) {
       if (e.target.matches('img')) {
         e.target.classList.add('left-fade-in');
@@ -109,7 +107,6 @@ const observerCallback = (entries) => {
       }
       if (e.intersectionRatio >= 0.9) {
         if (e.target.matches('header')) {
-          console.log('header');
           e.target.classList.add('up-fade-in');
         }
       }
@@ -151,3 +148,30 @@ solobobBtn.addEventListener('click', () => {
 //     clickable: true,
 //   },
 // });
+
+window.addEventListener('DOMContentLoaded', () => {
+  const apple = /iphone|ipad|ipod/i.test(navigator.userAgent.toLowerCase());
+  console.log(apple);
+
+  if (mobile) {
+    //navigator.userAgent에 /iphone|ipad|ipod|android 의 단어포함이 true 일때
+
+    // 유저에이전트를 불러와서 OS를 구분합니다.
+
+    var userAgent = navigator.userAgent.toLowerCase();
+
+    if (userAgent.search('android') > -1) currentOS = 'android';
+    else if (
+      userAgent.search('iphone') > -1 ||
+      userAgent.search('ipod') > -1 ||
+      userAgent.search('ipad') > -1
+    )
+      currentOS = 'ios';
+  } else {
+    // 모바일이 아닐 때
+
+    currentOS = 'nomobile';
+  }
+});
+
+console.log(document.documentElement.style.setProperty('--color-white', 'red'));

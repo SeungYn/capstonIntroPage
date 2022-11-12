@@ -1,5 +1,34 @@
-/* Global */
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Codespaces
+Marketplace
+Explore
+ 
+@SeungYn 
+SeungYn
+/
+capstonIntroPage
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+capstonIntroPage/style.css
+@SeungYn
+SeungYn 최종
+Latest commit ec95c6f 2 days ago
+ History
+ 1 contributor
+653 lines (562 sloc)  11.6 KB
 
+/* Global */
 :root {
   /* Color */
   --color-white: #ffffff;
@@ -22,29 +51,18 @@
   --color-black: #000000;
 
   /* Font size */
-  /* --font-very-large: 4rem;
+  --font-very-large: 4rem;
   --font-large: 3rem;
   --font-small-large: 2.5rem;
   --font-medium: 2.2rem;
   --font-regular: 1.8rem;
-  --font-small: 2rem;
-  --font-micro: 1.4rem; */
-  --font-very-large: 76px;
-  --font-large: 48px;
-  --font-small-large: 40px;
-  --font-medium: 35.2px;
-  --font-regular: 28.8px;
   --font-small: 16px;
-  --font-micro: 22.4px;
+  --font-micro: 1.4rem;
   /* grid size */
-  /* --gird-row-basic: 30rem;
-  --gird-row-header: 10rem; */
-  --gird-row-basic: 480px;
-  --gird-row-header: 160px;
+  --gird-row-basic: 30rem;
+  --gird-row-header: 10rem;
   /* padding */
-  /* --padding-basic: 5rem 10rem; */
-  --padding-basic: 80px 160px;
-
+  --padding-basic: 5rem 10rem;
   /* Font weight */
   --weight-bold: 700;
   --weight-semi-bold: 600;
@@ -58,13 +76,7 @@
 }
 
 /* Universal tags */
-html {
-  font-size: 1px;
-  -webkit-text-size-adjust: auto; /* 크롬, 사파리, 오페라 신버전 */
-  -ms-text-size-adjust: none; /* IE */
-  -moz-text-size-adjust: none; /* 파이어폭스 */
-  -o-text-size-adjust: none; /* 오페라 구버전 */
-}
+
 * {
   box-sizing: border-box;
 }
@@ -73,7 +85,6 @@ body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   overflow-x: hidden;
-  height: 100%;
 }
 
 a {
@@ -100,10 +111,8 @@ button {
 }
 
 .phone {
-  /* width: 15rem;
-  height: 30rem; */
-  width: 240px;
-  height: 480px;
+  width: 15rem;
+  height: 30rem;
   box-shadow: 10px 15px 6px -2px rgba(0, 0, 0, 0.66);
   -webkit-box-shadow: 10px 15px 6px -2px rgba(0, 0, 0, 0.66);
   -moz-box-shadow: 10px 15px 6px -2px rgba(0, 0, 0, 0.66);
@@ -196,8 +205,7 @@ button {
 
 .bubble-content {
   font-size: var(--font-medium);
-  /* padding: 0 2rem; */
-  padding: 0 32px;
+  padding: 0 2rem;
 }
 
 /* 
@@ -213,39 +221,32 @@ intro part
   );
 
   display: flex;
-  flex: 0 0;
   justify-content: center;
   overflow: hidden;
-  /* padding-top: 7rem; */
-  padding-top: 112px;
+  padding-top: 7rem;
   flex-shrink: 0;
   flex-wrap: nowrap;
 }
 
-/* flex에 -webkit-text-size-adjust:auto를 적용시키려면 안됨*/
 .intro__left {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  white-space: nowrap; */
+  white-space: nowrap;
 }
 .intro__left-title {
   font-size: var(--font-very-large);
   color: var(--color-light-white);
-  /* margin-bottom: 1rem; */
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .intro__left-subTitle {
   font-size: var(--font-micro);
   color: var(--color-light-purple);
-  /* margin-bottom: 2rem; */
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 .intro__left-QRcode {
-  /* width: 5rem; */
-  width: 80px;
+  width: 5rem;
   background-color: transparent;
-  display: block;
 }
 
 .intro__right {
@@ -267,11 +268,9 @@ intro part
 /* description */
 
 .discription {
-  overflow: hidden;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* grid-auto-rows: 15rem 1fr; */
-  grid-auto-rows: 240px 1fr;
+  grid-auto-rows: 15rem 1fr;
   grid-template-areas:
     'a a'
     'b c';
@@ -293,13 +292,11 @@ intro part
 .discription__left {
   grid-area: b;
   padding: 0 0.3rem;
-  /* padding: 0 0.3rem; */
 }
 
 .discription__left-subTitle {
   font-size: var(--font-medium);
-  /* padding-bottom: 1rem; */
-  padding-bottom: 16px;
+  padding-bottom: 1rem;
 }
 
 .discription__left-span {
@@ -374,8 +371,7 @@ intro part
 
 .map__leftBubble-content {
   font-size: var(--font-medium);
-  /* padding: 0 2rem; */
-  padding: 0 32px;
+  padding: 0 2rem;
   color: var(--color-light-white);
 }
 
@@ -483,8 +479,7 @@ intro part
 }
 
 .party-buble-report > .party-buble:not(:first-child) {
-  /* margin-top: 1.6rem; */
-  margin-top: 25.6px;
+  margin-top: 1.6rem;
   height: 42%;
 }
 
@@ -610,48 +605,45 @@ intro part
 
 /* observe */
 .up-fade-out {
-  /* transform: translateY(-10rem); */
-  transform: translateY(-160px);
+  transform: translateY(-10rem);
   opacity: 0;
-  transition: transform 0.6s ease-in, opacity 0.6s ease-in;
+  transition: all 0.6s ease-in;
 }
+
 .up-fade-in {
   transform: translateY(0);
   opacity: 1;
-  transition: transform 0.6s ease-in, opacity 0.6s ease-in;
+  transition: all 0.6s ease-in;
 }
 
 .left-fade-out {
-  /* transform: translateX(-20rem); */
-  transform: translateX(-320px);
+  transform: translateX(-20rem);
   opacity: 0;
-  transition: transform 0.6s ease-in, opacity 0.6s ease-in;
+  transition: all 0.6s ease-in;
 }
 
 .left-fade-in {
   transform: translateX(0);
   opacity: 1;
-  transition: transform 0.6s ease-in, opacity 0.6s ease-in;
+  transition: all 0.6s ease-in;
 }
 
 .right-fade-out {
-  /* transform: translateX(20rem); */
-  transform: translateX(320px);
+  transform: translateX(20rem);
   opacity: 0;
-  transition: transform 0.6s ease-in, opacity 0.6s ease-in;
+  transition: all 0.6s ease-in;
 }
 
 .right-fade-in {
   transform: translateX(0);
   opacity: 1;
-  transition: transform 0.6s ease-in, opacity 0.6s ease-in;
+  transition: all 0.6s ease-in;
 }
 
 /* play */
 .play {
   text-align: center;
-  /* padding: 10rem; */
-  padding: 160px;
+  padding: 10rem;
   background-color: var(--color-light2-purple);
 }
 
@@ -661,15 +653,12 @@ intro part
 }
 
 .play-btn {
-  /* margin-top: 2rem; */
-  margin-top: 32px;
+  margin-top: 2rem;
   font-size: var(--font-large);
   background-color: var(--color-light-purple);
-  /* padding: 1.6rem 2rem; */
-  padding: 25.6px 32px;
+  padding: 1.6rem 2rem;
   color: var(--color-white);
-  /* border-radius: 2rem; */
-  border-radius: 32px;
+  border-radius: 2rem;
   box-shadow: 10px 15px 6px -2px rgba(0, 0, 0, 0.66);
   -webkit-box-shadow: 10px 15px 6px -2px rgba(0, 0, 0, 0.66);
   -moz-box-shadow: 10px 15px 6px -2px rgba(0, 0, 0, 0.66);

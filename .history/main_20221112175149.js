@@ -1,7 +1,26 @@
-alert(
-  '네이버앱, Edge로 접속하시면 동영상이 안 나옵니다. 일부 아이폰은 UI가 제대로 반영되지 않을 수 있습니다. 크롬, 사파리로 접속하시길 바랍니다. 아이폰은 확대하면 UI가 변경됩니다. '
-);
+// alert(
+//   '네이버앱, Edge로 접속하시면 동영상이 안 나옵니다. 일부 아이폰은 UI가 제대로 반영되지 않을 수 있습니다. 크롬, 사파리로 접속하시길 바랍니다.'
+// );
 //로드시 초기세팅
+window.addEventListener('DOMContentLoaded', () => {
+  let apple = /iphone|ipod/i.test(navigator.userAgent.toLowerCase());
+  alert(navigator.userAgent.toLowerCase());
+
+  if (apple) {
+    alert('apple');
+    // document.documentElement.style.setProperty('--font-very-large', '10px');
+    // document.documentElement.style.setProperty('--font-large', '10px');
+    // document.documentElement.style.setProperty('--font-small-large', '10px');
+    // document.documentElement.style.setProperty('--font-medium', '10px');
+    // document.documentElement.style.setProperty('--font-regular', '10px');
+    // document.documentElement.style.setProperty('--font-small', '10px');
+    // document.documentElement.style.setProperty('--font-micro', '10px');
+    const bubleContent = document.querySelector('.bubble-content');
+  }
+  // alert(navigator.userAgent.toLowerCase());
+
+  // alert(apple);
+});
 
 window.addEventListener(
   'wheel',
@@ -109,7 +128,6 @@ const observerCallback = (entries) => {
       }
       if (e.intersectionRatio >= 0.9) {
         if (e.target.matches('header')) {
-          console.log('header');
           e.target.classList.add('up-fade-in');
         }
       }

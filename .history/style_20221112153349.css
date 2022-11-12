@@ -22,20 +22,20 @@
   --color-black: #000000;
 
   /* Font size */
-  /* --font-very-large: 4rem;
+  --font-very-large: 4rem;
   --font-large: 3rem;
   --font-small-large: 2.5rem;
   --font-medium: 2.2rem;
   --font-regular: 1.8rem;
   --font-small: 2rem;
-  --font-micro: 1.4rem; */
-  --font-very-large: 76px;
+  --font-micro: 1.4rem;
+  /* --font-very-large: 76px;
   --font-large: 48px;
   --font-small-large: 40px;
   --font-medium: 35.2px;
   --font-regular: 28.8px;
   --font-small: 16px;
-  --font-micro: 22.4px;
+  --font-micro: 22.4px; */
   /* grid size */
   /* --gird-row-basic: 30rem;
   --gird-row-header: 10rem; */
@@ -59,7 +59,7 @@
 
 /* Universal tags */
 html {
-  font-size: 1px;
+  /* font-size: 16px; */
   -webkit-text-size-adjust: auto; /* 크롬, 사파리, 오페라 신버전 */
   -ms-text-size-adjust: none; /* IE */
   -moz-text-size-adjust: none; /* 파이어폭스 */
@@ -74,6 +74,8 @@ body {
   margin: 0;
   overflow-x: hidden;
   height: 100%;
+  width: 1920px;
+  max-width: 1920px;
 }
 
 a {
@@ -222,11 +224,10 @@ intro part
   flex-wrap: nowrap;
 }
 
-/* flex에 -webkit-text-size-adjust:auto를 적용시키려면 안됨*/
 .intro__left {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  white-space: nowrap; */
+  white-space: nowrap;
 }
 .intro__left-title {
   font-size: var(--font-very-large);
@@ -245,7 +246,6 @@ intro part
   /* width: 5rem; */
   width: 80px;
   background-color: transparent;
-  display: block;
 }
 
 .intro__right {
@@ -267,7 +267,6 @@ intro part
 /* description */
 
 .discription {
-  overflow: hidden;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   /* grid-auto-rows: 15rem 1fr; */
@@ -313,6 +312,7 @@ intro part
 
 /* map part */
 .map {
+  overflow-x: hidden;
   position: relative;
   background-color: var(--color-light2-purple);
   display: grid;
@@ -397,6 +397,7 @@ intro part
 
 /* party */
 .party {
+  overflow-x: hidden;
   background-color: var(--color-light-1-purple);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -503,6 +504,7 @@ intro part
 
 /* chat */
 .chat {
+  overflow-x: hidden;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background-color: var(--color-light2-purple);
@@ -613,38 +615,39 @@ intro part
   /* transform: translateY(-10rem); */
   transform: translateY(-160px);
   opacity: 0;
-  transition: transform 0.6s ease-in, opacity 0.6s ease-in;
+  transition: all 0.6s ease-in;
 }
+
 .up-fade-in {
   transform: translateY(0);
   opacity: 1;
-  transition: transform 0.6s ease-in, opacity 0.6s ease-in;
+  transition: all 0.6s ease-in;
 }
 
 .left-fade-out {
   /* transform: translateX(-20rem); */
   transform: translateX(-320px);
   opacity: 0;
-  transition: transform 0.6s ease-in, opacity 0.6s ease-in;
+  transition: all 0.6s ease-in;
 }
 
 .left-fade-in {
   transform: translateX(0);
   opacity: 1;
-  transition: transform 0.6s ease-in, opacity 0.6s ease-in;
+  transition: all 0.6s ease-in;
 }
 
 .right-fade-out {
   /* transform: translateX(20rem); */
   transform: translateX(320px);
   opacity: 0;
-  transition: transform 0.6s ease-in, opacity 0.6s ease-in;
+  transition: all 0.6s ease-in;
 }
 
 .right-fade-in {
   transform: translateX(0);
   opacity: 1;
-  transition: transform 0.6s ease-in, opacity 0.6s ease-in;
+  transition: all 0.6s ease-in;
 }
 
 /* play */

@@ -1,6 +1,6 @@
-alert(
-  '네이버앱, Edge로 접속하시면 동영상이 안 나옵니다. 일부 아이폰은 UI가 제대로 반영되지 않을 수 있습니다. 크롬, 사파리로 접속하시길 바랍니다. 아이폰은 확대하면 UI가 변경됩니다. '
-);
+// alert(
+//   '네이버앱, Edge로 접속하시면 동영상이 안 나옵니다. 일부 아이폰은 UI가 제대로 반영되지 않을 수 있습니다. 크롬, 사파리로 접속하시길 바랍니다.'
+// );
 //로드시 초기세팅
 
 window.addEventListener(
@@ -107,12 +107,12 @@ const observerCallback = (entries) => {
           e.target.classList.add('left-fade-in');
         }
       }
-      if (e.intersectionRatio >= 0.9) {
-        if (e.target.matches('header')) {
-          console.log('header');
-          e.target.classList.add('up-fade-in');
-        }
+      // if (e.intersectionRatio >= 0.9) {
+      if (e.target.matches('header')) {
+        console.log('header');
+        e.target.classList.add('up-fade-in');
       }
+      //}
     }
   });
 };

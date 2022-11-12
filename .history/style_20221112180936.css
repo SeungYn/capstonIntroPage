@@ -1,6 +1,4 @@
-/* Global */
-
-:root {
+Global :root {
   /* Color */
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
@@ -222,11 +220,7 @@ intro part
   flex-wrap: nowrap;
 }
 
-/* flex에 -webkit-text-size-adjust:auto를 적용시키려면 안됨*/
 .intro__left {
-  /* display: flex;
-  flex-direction: column;
-  white-space: nowrap; */
 }
 .intro__left-title {
   font-size: var(--font-very-large);
@@ -313,6 +307,7 @@ intro part
 
 /* map part */
 .map {
+  overflow-x: hidden;
   position: relative;
   background-color: var(--color-light2-purple);
   display: grid;
@@ -397,6 +392,7 @@ intro part
 
 /* party */
 .party {
+  overflow-x: hidden;
   background-color: var(--color-light-1-purple);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -503,6 +499,7 @@ intro part
 
 /* chat */
 .chat {
+  overflow-x: hidden;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background-color: var(--color-light2-purple);
@@ -613,38 +610,39 @@ intro part
   /* transform: translateY(-10rem); */
   transform: translateY(-160px);
   opacity: 0;
-  transition: transform 0.6s ease-in, opacity 0.6s ease-in;
+  transition: all 0.6s ease-in;
 }
+
 .up-fade-in {
   transform: translateY(0);
   opacity: 1;
-  transition: transform 0.6s ease-in, opacity 0.6s ease-in;
+  transition: all 0.6s ease-in;
 }
 
 .left-fade-out {
   /* transform: translateX(-20rem); */
   transform: translateX(-320px);
   opacity: 0;
-  transition: transform 0.6s ease-in, opacity 0.6s ease-in;
+  transition: all 0.6s ease-in;
 }
 
 .left-fade-in {
   transform: translateX(0);
   opacity: 1;
-  transition: transform 0.6s ease-in, opacity 0.6s ease-in;
+  transition: all 0.6s ease-in;
 }
 
 .right-fade-out {
   /* transform: translateX(20rem); */
   transform: translateX(320px);
   opacity: 0;
-  transition: transform 0.6s ease-in, opacity 0.6s ease-in;
+  transition: all 0.6s ease-in;
 }
 
 .right-fade-in {
   transform: translateX(0);
   opacity: 1;
-  transition: transform 0.6s ease-in, opacity 0.6s ease-in;
+  transition: all 0.6s ease-in;
 }
 
 /* play */

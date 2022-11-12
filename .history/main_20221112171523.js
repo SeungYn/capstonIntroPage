@@ -1,7 +1,20 @@
-alert(
-  '네이버앱, Edge로 접속하시면 동영상이 안 나옵니다. 일부 아이폰은 UI가 제대로 반영되지 않을 수 있습니다. 크롬, 사파리로 접속하시길 바랍니다. 아이폰은 확대하면 UI가 변경됩니다. '
-);
+// alert(
+//   '네이버앱, Edge로 접속하시면 동영상이 안 나옵니다. 일부 아이폰은 UI가 제대로 반영되지 않을 수 있습니다. 크롬, 사파리로 접속하시길 바랍니다.'
+// );
 //로드시 초기세팅
+window.addEventListener('DOMContentLoaded', () => {
+  const apple = /iphone|ipad|ipod|safari/i.test(
+    navigator.userAgent.toLowerCase()
+  );
+  alert(navigator.userAgent.toLowerCase());
+
+  alert(apple);
+});
+
+window.onload(() => {
+  alert(1);
+  fixHeight();
+});
 
 window.addEventListener(
   'wheel',
@@ -18,8 +31,8 @@ window.addEventListener(
 function fixHeight() {
   const zoom = getWindowWidth() / 1920;
 
-  // alert(`windowWidth : ${getWindowWidth()}`);
-  // alert(`zoom : ${zoom}`);
+  alert(`windowWidth : ${getWindowWidth()}`);
+  alert(`zoom : ${zoom}`);
   document.body.style.zoom = zoom;
   //document.body.style.transform = `scale(${zoom})`;
 }
@@ -35,7 +48,7 @@ function getWindowWidth() {
 window.addEventListener('resize', () => {
   fixHeight();
 });
-fixHeight();
+// fixHeight();
 //IntersectionObserver
 const sectionIds = ['#map', '#party', '#chat'];
 const sections = sectionIds.map((i) => document.querySelector(i));
@@ -93,7 +106,6 @@ const observerCallback2 = (entries) => {
 //그냥 보이면 모든지 나타나는 버전
 const observerCallback = (entries) => {
   entries.forEach((e) => {
-    console.log(e);
     if (e.isIntersecting) {
       if (e.target.matches('img')) {
         e.target.classList.add('left-fade-in');
@@ -109,7 +121,6 @@ const observerCallback = (entries) => {
       }
       if (e.intersectionRatio >= 0.9) {
         if (e.target.matches('header')) {
-          console.log('header');
           e.target.classList.add('up-fade-in');
         }
       }
@@ -151,3 +162,5 @@ solobobBtn.addEventListener('click', () => {
 //     clickable: true,
 //   },
 // });
+
+console.log(document.documentElement.style.setProperty('--color-white', 'red'));
